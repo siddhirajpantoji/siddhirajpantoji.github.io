@@ -21,7 +21,7 @@
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <link rel="canonical" href="http://siddhiraj.com" />
   <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109887156-1"></script>
@@ -38,17 +38,14 @@
     window.onresize = function (event) {
       drawStuff();
     };
-
-
-
     function drawStuff() {
       var data = new google.visualization.arrayToDataTable([
         ['Technologies', 'Rating of 10'],
         ["Java", 8],
-        ["NodeJs", 7],
-        ['Swift(iOS)', 5],
+        ["NodeJs", 8],
         ["Database", 7],
         ["HTML/CSS", 6],
+        ['Swift(iOS)', 5],
         ["jQuery", 5]
       ]);
 
@@ -98,9 +95,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#tech">Tech</a>
           </li>
           <li class="nav-item">
@@ -121,64 +115,11 @@
       <div class="intro-text">
         <span class="name">Siddhiraj Pantoji</span>
         <hr class="star-light">
-        <span class="skills">Java Developer - Web Developer </span>
+        <span class="skills">Polyglot Developer </span>
       </div>
     </div>
   </header>
 
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="text-center">PORTFOLIO</h2>
-      <hr class="star-primary">
-      <div class="row">
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#travelexPortfolio" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/img-travelex.jpg" alt="Travelex">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/img-myglamm.jpg" alt="MyGlamm">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#verdantisPortfolio" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/img-verdantis.jpg" alt="Verdantis">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="https://github.com/siddhirajpantoji" target="#">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/img-github.jpg" alt="Git Hib">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </section>
   <section id="tech">
     <div class="container">
       <h2 class="text-center">TECH</h2>
@@ -193,7 +134,7 @@
     <div class="container">
       <h2 class="text-center">About</h2>
       <hr class="star-light">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-4 ml-auto">
           <p>He is a tech entusiast and loves to code and learn new Things   </p>
         </div>
@@ -208,7 +149,97 @@
             Download Resume
           </a>
         </div>
-      </div>
+      </div> -->
+      <!-- Timeline Start -->
+       <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2009-2011</h4>
+                  <h4 class="subheading">Our Humble Beginnings</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                    temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>March 2011</h4>
+                  <h4 class="subheading">An Agency is Born</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                    temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>December 2012</h4>
+                  <h4 class="subheading">Transition to Full Service</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                    temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>July 2014</h4>
+                  <h4 class="subheading">Phase Two Expansion</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                    temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>December 2012</h4>
+                  <h4 class="subheading">Transition to Full Service</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                    temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Contact me
+                  <br>to 
+                  <br>Hire</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <!-- Timeline End -->
     </div>
   </section>
 
