@@ -1,62 +1,42 @@
-# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
+# html-resume
+A single-page résumé template done purely with HTML and CSS, which can be rendered into PDF through web browsers' print-to-PDF functionality, making a nice, sleek, professsional and ready-to-print résumé. See my living example at: https://mnjul.net/cv/resume.pdf
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+As the résumé is purely typeset with HTML and CSS, it's highly customizable (e.g. if you want an "objective" section, just copy-paste a few HTML elements) and does not require proprietary software. All you need is a text editor and a web browser (see compatibility section below). Oh, maybe some intermediate CSS knowledge. And, since it's open source with Apache License, you're allowed (and encouraged!) to create your own fine-tuned template and share with others.
 
-## Preview
+Find the background story of this project at [my blog](https://blogs.purincess.tw/matrixblog/2016/04/typesetting-resume-with-html-and-css/).
 
-[![Freelancer Preview](https://startbootstrap.com/assets/img/templates/freelancer.jpg)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
+# Compatibility and Known Issues/Limitations
+* I have only tested this project on latest release version of Firefox (56 as of writing) and Google Chrome (61) on macOS 10.13 (High Sierra).
+* It's my intention to support other browsers/platforms (like IE Edge on Windows?) as long as the browser sufficiently supports the required CSS features: ``calc()``, ``var()``, ``flexbox``, ...etc, and does not require (too many) dirty tricks. PRs or comments welcome!
+* **No hyperlinking functionality in rendered PDF** as browers's print-to-PDF process is merely "flattening to digital paper".
+* Other browser-specific hacks are as commented in the code.
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
+# Fonts, Icon Fonts, and Dependencies
+* [Open Sans](https://www.google.com/fonts/specimen/Open+Sans), [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) and [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro) are used at various weights, but are not included in this repository. Please follow the links to download the fonts onto your computer.
+* Icons from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) are used and are incorporated as a git submodule in this repository.
+* [Normalize.css](https://necolas.github.io/normalize.css/) is used and is incorporated as a git submodule in this repository.
 
-## Status
+# Paper Size/Orientation
+* Currently letter portrait only. PRs welcome for other paper sizes --- especially A4!
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
+# Actually Rendering the PDF
+* Again...I've only tried on the said version of Firefox & Chrome, on macOS.
+* Just open the HTML file with the browser. No need to serve the document from any kind of web server --- the ``file:///`` protocol should be good enough.
+* On Firefox:
+  * You probably need to remove any page margins in **about:config**.
+  * Uncheck **Ignore Scaling and Shrink To Fit Page Width**.
+  * Check **Print Background Colors**.
+  * Clear out the headers and footers.
+  * Save as PDF.
+* On Google Chrome:
+  * Set **Margin** to **None**.
+  * Print **Background Graphics**.
+  * Don't print headers and footers.
+  * Save as PDF.
 
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
-* Install via npm: `npm i startbootstrap-freelancer`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
-
-## Custom Builds
-
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+# Footnotes and License
+* If you ever print out the rendered PDF, make sure texts are not clipped off, or items have not unexpectedly shrunk. Additionally, since the PDF has no margin outside the shaded sidebar, while most printers have no-print areas, the shaded sidebar probably won't fill up to the page's edge when printed.
+* This project is licensed under the Apache License.
+* PR, forks and other comments/suggestions are, as always, super welcome.
+* Feel free to remove the ``#disclaimer`` block which links back to this repository --- but huge thanks if you decide to keep it.
+* The layout/design was inspired by Paolo Zupin. Also, if anyone knows which link I should put under Mr. Zupin's name, please tell me!
