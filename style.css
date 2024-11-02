@@ -50,20 +50,21 @@ li{
 }
 
 #main{
-  float: left;
+  float: right;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
   font-size: 7pt;
 }
 
 #sidebar{
-  float: right;
+  float: left;
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #f2f2f2;
+  background-color: rgb(22, 56, 83);
   font-size: 8.5pt;
+  color:white
 }
 
 /* main */
@@ -322,6 +323,13 @@ li{
 #sidebar h1{
   font-weight: 400;
   font-size: 11pt;
+  color: white;
+}
+
+#sidebar a{
+  /* font-weight: 400;
+  font-size: 11pt; */
+  color: white;
 }
 
 .side-block{
